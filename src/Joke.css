@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     width: 20%;
-    min-width:150px;
+    min-width: 150px;
     margin-right: 1rem;
 }
 
@@ -34,9 +34,24 @@
 }
 
 .fa-arrow-up, .fa-arrow-down {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 10px;
     cursor: pointer;
+    font-weight: 800;
+}
+
+.fa-arrow-up:hover, .fa-arrow-down:hover {
+    transition: all 0.5s;
+}
+
+.fa-arrow-up:hover {
+    transform: translateY(-5px);
+    color: rgb(153, 214, 229);
+}
+
+.fa-arrow-down:hover {
+    transform: translateY(5px);
+    color: rgba(240, 98, 146, 1);
 }
 
 .Joke-emoji {
@@ -44,4 +59,9 @@
     margin-left: auto;
     border-radius: 50%;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1), inset 0 0 25px #7e57c2;
+    transition: 0.2s;
+}
+
+.Joke:hover .Joke-emoji{
+    transform: scale(1.3);
 }

@@ -3,6 +3,7 @@ import axios from 'axios'
 import './JokesList.css'
 import Joke from './Joke'
 import { v4 as uuid } from 'uuid'
+import './shake.css'
 
 class JokesList extends Component {
     static defaultProps = {
